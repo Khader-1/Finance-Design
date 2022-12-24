@@ -5,7 +5,7 @@ import { navLinks } from "../constants";
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className="w-full flex py-6 justify-between items-center navbar relative z-10">
       <img src={logo} alt="HooBank" className="w-[124px] h-[32px]" />
       <ul className="hidden sm:flex items-center justify-end flex-1">
         {navLinks.map((link, index) => (
